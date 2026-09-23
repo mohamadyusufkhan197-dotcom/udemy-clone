@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: 'gabrito', sans-serif;
+    font-family: 'Gabarito', sans-serif;
 }
 
 .navbar{
@@ -14,11 +14,15 @@ body{
     border-bottom: 1px solid black;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 2;
 }
 
 .navbar__s1__title{
     color: blueviolet;
-    align-items: center;
+    
 }
 
 .navbar__s2 input{
@@ -138,4 +142,32 @@ body{
 
 .footer__one__s1 p, .footer__one__s2 p{
     margin: 20px;
+}
+
+.sale-image__offer {
+  z-index: 1;
+  position: absolute;
+  bottom: 200px;
+  left: 50px;
+  border: 5px solid black;
+  width: 20%;
+  padding: 10px;
+}
+
+.mylearning__popup {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    top: 200%;
+    padding: 3%;
+    display: none;
+}
+
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning:hover .mylearning__popup {
+    display: block;
 }
