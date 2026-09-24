@@ -52,6 +52,10 @@ body{
     align-items: center;
 }
 
+.nav__s4{
+    display: none;
+}
+
 .category{
     display: flex;
     justify-content: space-around;
@@ -91,8 +95,9 @@ body{
 
 .course-card{
     width: 250px;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    flex-grow: 1;
+    margin: 5px;
+    flex-basis: 20%;
 }
 
 .recommended__container{
@@ -200,4 +205,26 @@ body{
 
 .sale-image{
     position: relative;
+}
+
+
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+    .navbar__s2, .navbar__s3, .category{
+        display: none;
+    }
+
+    .nav__s4{
+        display: block;
+    }
+
 }
